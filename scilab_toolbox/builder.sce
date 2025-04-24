@@ -34,7 +34,14 @@ function main_builder()
 
     // Action
     // =============================================================================
-    help_from_sci("macros","help/en_US");
+    // Original line
+    // help_from_sci("macros","help/en_US");
+
+    // Corrected lines:
+    macros_path = toolbox_dir + filesep() + "macros";
+    help_output_path = toolbox_dir + filesep() + "help" + filesep() + "en_US";
+    help_from_sci(macros_path, help_output_path);
+    
     tbx_builder_macros(toolbox_dir);
     tbx_builder_gateway(toolbox_dir);
     tbx_build_localization(toolbox_dir);

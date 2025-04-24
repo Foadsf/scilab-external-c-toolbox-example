@@ -55,6 +55,7 @@ c_library_source/thirdparty/
 # Compiled Macros
 scilab_toolbox/macros/*.bin
 scilab_toolbox/macros/lib/
+scilab_toolbox/macros/lib
 
 # Generated JAR files
 scilab_toolbox/jar/*.jar
@@ -239,3 +240,7 @@ venv/
 env/
 .venv/
 .env/
+
+# other
+repomix-output.xml
+scilab_toolbox/sci_gateway/cpp/Makelib.mak
